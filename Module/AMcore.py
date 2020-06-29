@@ -340,12 +340,6 @@ def install_scanless():
     print(colored("安装完成!","blue"))
     print(colored("例如:scanless -t scanme.nmap.org -s spiderip","green"))
     print(colored("项目地址查看:https://github.com/vesche/scanless","white"))
-<<<<<<< HEAD
-    okay()
-=======
-<<<<<<< HEAD
-    okay()
-=======
     backmenu()
 
 
@@ -360,7 +354,7 @@ def install_IPGeolocation():
     os.chdir("%s"%pwd)
     print(colored("安装完成!","blue"))
     print(colored("现在可以使用python运行！","green"))
-
+    backmenu()
 
 def install_IP_Tracer():
     print(colored("正在安装IP-Tracer，请稍等...","green"))
@@ -372,5 +366,4 @@ def install_IP_Tracer():
     os.system("./install")
     print(colored("安装完成!","blue"))
     print(colored("这个是使用php写的工具，你可直接输入ip-trace运行","green"))
->>>>>>> ec07c78... automux
->>>>>>> 34fd878... automux
+    okay()

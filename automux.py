@@ -107,17 +107,9 @@ class install:
         elif lygj.strip() == "2" or lygj.strip() == "02":install_sqlmap()
         elif lygj.strip() == "3" or lygj.strip() == "03":install_RouterSploit()
         elif lygj.strip() == "0" or lygj.strip() == "00":restart()
-<<<<<<< HEAD
         else:error() 
 
-=======
-<<<<<<< HEAD
-        else:error() 
 
-=======
-        else:error()
-        
-        
     def ipgz():
         print(colored("\n       [01]","yellow") + " : IPGeolocation")
         print(colored("       [02]","yellow") + " : IP-Tracer")
@@ -129,8 +121,6 @@ class install:
         else:error()
                
         
->>>>>>> ec07c78... automux
->>>>>>> 34fd878... automux
     def Other(): 
         print(colored("\n       [01]","yellow") + " : Lazymux")
         print(colored("       [02]","yellow") + " : oh-my-zsh\n")
@@ -214,16 +204,8 @@ def install_list():
     print(colored("       [04]","yellow") + " : 密码攻击")
     print(colored("       [05]","yellow") + " : 嗅探和欺骗")
     print(colored("       [06]","yellow") + " : 利用工具")
-<<<<<<< HEAD
-    print(colored("       [07]","yellow") + " : 其他\n")
-=======
-<<<<<<< HEAD
-    print(colored("       [07]","yellow") + " : 其他\n")
-=======
     print(colored("       [07]","yellow") + " : IP地址跟踪")
     print(colored("       [08]","yellow") + " : 其他\n")
->>>>>>> ec07c78... automux
->>>>>>> 34fd878... automux
     print(colored("       [00]","yellow") + " : Back Menu\n")
     ilist = input(colored("AutoMux >>> ","yellow",attrs=['bold']))
     if ilist.strip() == "1" or ilist.strip() == "01":install.xxsj()
@@ -232,20 +214,10 @@ def install_list():
     elif ilist.strip() == "4" or ilist.strip() == "04":install.mmgj()
     elif ilist.strip() == "5" or ilist.strip() == "05":install.xtqp()
     elif ilist.strip() == "6" or ilist.strip() == "06":install.lygj()
-<<<<<<< HEAD
-    elif ilist.strip() == "7" or ilist.strip() == "07":install.Other()
-    elif ilist.strip() == "0" or ilist.strip() == "00":restart()
-=======
-<<<<<<< HEAD
-    elif ilist.strip() == "7" or ilist.strip() == "07":install.Other()
-    elif ilist.strip() == "0" or ilist.strip() == "00":restart()
-=======
     elif ilist.strip() == "7" or ilist.strip() == "07":install.ipgz()
     elif ilist.strip() == "8" or ilist.strip() == "08":install.Other()
     elif ilist.strip() == "0" or ilist.strip() == "00":restart()
     else:error()
->>>>>>> ec07c78... automux
->>>>>>> 34fd878... automux
 
 
 if __name__ == "__main__":
