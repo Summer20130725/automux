@@ -119,7 +119,17 @@ class install:
         elif ipgz.strip() == "2" or ipgz.strip() == "02":install_IP_Tracer()
         elif ipgz.strip() == "0" or ipgz.strip() == "00":restart()
         else:error()
-               
+
+
+    def scfs():
+        print(colored("\n       [01]","yellow") + " : backdoor-apk" + colored(" LINUX ","blue"))
+        print(colored("       [02]","yellow") + " : msfpc " + colored("LINUX ","blue") + colored(" * ","red"))
+        print(colored("       [00]", "yellow") + " : Back Menu\n")
+        scfs = input(colored("AutoMux >>> ","yellow",attrs=['bold']))
+        if scfs.strip() == "1" or scfs.strip() == "01":install_backdoor_apk()
+        elif scfs.strip() == "2" or scfs.strip() == "02":install_msfpc()
+        elif scfs.strip() == "0" or scfs.strip() == "00":restart()
+        else:error()
         
     def Other(): 
         print(colored("\n       [01]","yellow") + " : Lazymux")
@@ -205,7 +215,8 @@ def install_list():
     print(colored("       [05]","yellow") + " : 嗅探和欺骗")
     print(colored("       [06]","yellow") + " : 利用工具")
     print(colored("       [07]","yellow") + " : IP地址跟踪")
-    print(colored("       [08]","yellow") + " : 其他\n")
+    print(colored("       [08]","yellow") + " : 木马生成和反杀")
+    print(colored("       [09]","yellow") + " : 其他\n")
     print(colored("       [00]","yellow") + " : Back Menu\n")
     ilist = input(colored("AutoMux >>> ","yellow",attrs=['bold']))
     if ilist.strip() == "1" or ilist.strip() == "01":install.xxsj()
@@ -215,7 +226,8 @@ def install_list():
     elif ilist.strip() == "5" or ilist.strip() == "05":install.xtqp()
     elif ilist.strip() == "6" or ilist.strip() == "06":install.lygj()
     elif ilist.strip() == "7" or ilist.strip() == "07":install.ipgz()
-    elif ilist.strip() == "8" or ilist.strip() == "08":install.Other()
+    elif ilist.strip() == "8" or ilist.strip() == "08":install.scfs()
+    elif ilist.strip() == "9" or ilist.strip() == "09":install.Other()
     elif ilist.strip() == "0" or ilist.strip() == "00":restart()
     else:error()
 

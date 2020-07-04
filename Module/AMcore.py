@@ -366,4 +366,36 @@ def install_IP_Tracer():
     os.system("./install")
     print(colored("安装完成!","blue"))
     print(colored("这个是使用php写的工具，你可直接输入ip-trace运行","green"))
+    backmenu()
+
+
+def install_backdoor_apk():
+    print(colored("正在安装backdoor-apk，请稍等...","green"))
+    print(colored("这个免杀工具体积很大(235MB)，这里会停留1分钟，给你30秒的时间，准备挂梯子。","yellow"))
+    print(colored("如果没有梯子你可以Ctrl+C取消安装，找梯子。","yellow"))
+    timeout(30)
+    os.system("cd /opt/")
+    os.system("sudo apt update && sudo apt upgrade -y")
+    print(colored("先安装小规模的需求库!","yellow"))
+    os.system("sudo apt install bytecode-viewer libsmali-java smali apktool unzip git -y")
+    print(colored("接下来安装大体积的需求库！","yellow"))
+    os.system("sudo apt install metasploit-framework openjdk-11-jdk -y")
+    print(colored("准备克隆backdoor-apk，请准备好梯子，我会等待30秒。","yellow"))
+    print(colored("没有梯子克隆会很痛苦的！","red"))
+    timeout(30)
+    print(colored("请等待.......","blue"))
+    os.system("git clone https://github.com/dana-at-cp/backdoor-apk")
+    os.chdir("%s/backdoor-apk/"%pwd)
+    print(colored("安装完成，你cd可以进去看一下运行一下","blue"))
+    print(colored("玩法链接：https://github.com/dana-at-cp/backdoor-apk","green"))
+    backmenu()
+
+
+def install_msfpc():
+    print(colored("正在安装msfpc，请稍等...","green"))
+    os.system("sudo apt update && sudo apt upgrade -y")
+    os.system("sudo apt install msfpc -y")
+    print(colored("安装完成！","blue"))
+    print(colored("你可以使用sudo msfpc查看使用的方法。","green"))
     okay()
+
