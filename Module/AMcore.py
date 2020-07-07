@@ -397,5 +397,16 @@ def install_msfpc():
     os.system("sudo apt install msfpc -y")
     print(colored("安装完成！","blue"))
     print(colored("你可以使用sudo msfpc查看使用的方法。","green"))
-    okay()
+    backmenu()
 
+
+def install_Websploit():
+    print(colored("正在安装websploit，请稍等...","green"))
+    os.system("apt update && apt upgrade -y")
+    os.system("apt install python git -y")
+    os.system("git clone https://github.com/websploit/websploit")
+    os.chdir("%s/websploit/"%pwd)
+    os.system("pip3 install -r requirements.txt")
+    os.system("python setup.py install")
+    print(colored("安装完成请在输入sudo websploit就可以执行了","blue"))
+    okay()

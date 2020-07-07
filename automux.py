@@ -100,19 +100,21 @@ class install:
     def lygj():
         print(colored("\n       [01]","yellow") + " : Metasploit")
         print(colored("       [02]","yellow") + " : Sqlmap")
-        print(colored("       [03]","yellow") + " : Routersploit\n")
+        print(colored("       [03]","yellow") + " : Routersploit")
+        print(colored("       [04]","yellow") + " : Websploit" + colored(" * \n","red"))
         print(colored("       [00]","yellow") + " : Back Menu\n")
         lygj = input(colored("AutoMux >>> ","yellow",attrs=['bold']))
         if lygj.strip() == "1" or lygj.strip() == "01":install_msf()
         elif lygj.strip() == "2" or lygj.strip() == "02":install_sqlmap()
         elif lygj.strip() == "3" or lygj.strip() == "03":install_RouterSploit()
+        elif lygj.strip() == "4" or lygj.strip() == "04":install_Websploit()
         elif lygj.strip() == "0" or lygj.strip() == "00":restart()
         else:error() 
 
 
     def ipgz():
         print(colored("\n       [01]","yellow") + " : IPGeolocation")
-        print(colored("       [02]","yellow") + " : IP-Tracer")
+        print(colored("       [02]","yellow") + " : IP-Tracer\n")
         print(colored("       [00]","yellow") + " : Back Menu\n")
         ipgz = input(colored("AutoMux >>> ","yellow",attrs=['bold']))
         if ipgz.strip() == "1" or ipgz.strip() == "01":install_IPGeolocation()
@@ -123,7 +125,7 @@ class install:
 
     def scfs():
         print(colored("\n       [01]","yellow") + " : backdoor-apk" + colored(" LINUX ","blue"))
-        print(colored("       [02]","yellow") + " : msfpc " + colored("LINUX ","blue") + colored(" * ","red"))
+        print(colored("       [02]","yellow") + " : msfpc " + colored("LINUX ","blue") + colored(" * \n","red"))
         print(colored("       [00]", "yellow") + " : Back Menu\n")
         scfs = input(colored("AutoMux >>> ","yellow",attrs=['bold']))
         if scfs.strip() == "1" or scfs.strip() == "01":install_backdoor_apk()
