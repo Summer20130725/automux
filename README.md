@@ -7,19 +7,19 @@
 ### 依赖
 • Python 3.x
 
-#### 安装和使用方法
-##### 懒人安装方法:
-```
-sh -c "$(curl https://raw.githubusercontent.com/Bcap03/AutoMux/master/script/install.sh)"
-```
 ##### 手动安装方法:
-1. git clone https://github.com/Bcap03/AutoMux.git
-2. cd AutoMux
-3. chmod +x install.sh
-4. ./install.sh
-5. automux
 
+**如果觉得Github速度慢，可以使用国内码云链接**
+
+https://gitee.com/whitedays2007/automux
+
+git clone https://github.com/whitedays2007/automux $PREFIX/share/
+
+cd $PREFIX/share/AutoMux
+
+chmod +x Module/*
+
+直接在环境中启动 automux
 
 ### 联系我
-QQ      : 3099869357
-Bilibili: @就是鹏鹏呀
+**Bilibili: @Windows-8**

@@ -7,8 +7,8 @@ from termcolor import colored
 pwd = os.getcwd()
 
 banner_info ="""
-+ -- --=[\033[1;0m AutoMux v2.6.6      (By.Bcap03)\033[1;34m           ]
-+ -- --=[ Bcap03's blog:https://bcap03.top          ]
++ -- --=[\033[1;0m AutoMux v2.6.6      (By.TsingPeng)\033[1;34m           ]
++ -- --=[ TsingPeng's blog:https://bcap03.top          ]
 + -- --=[ Root permission required with \033[1m '*'\033[1;34m        ]
 + -- --=[ Type \033[1;0m 'help'\033[1;34m for a list of commands       ]
 """
@@ -409,4 +409,26 @@ def install_Websploit():
     os.system("pip3 install -r requirements.txt")
     os.system("python setup.py install")
     print(colored("安装完成请在输入sudo websploit就可以执行了","blue"))
+    backmenu()
+    
+    
+def install_Devploit():
+    print(colored("正在安装Devploit，请稍等....","green"))
+    os.system("apt update && apt upgrade -y")
+    os.system("apt install git python2")
+    os.system("git clone https://github.com/vaginessa/Devploit")
+    os.system("chmod +x Devploit/Devploit update.py install")
+    print(colored("安装完成，如果想要把Devploit部署到环境里需要root权限","green"))
+    print(colored("你可以去获取，如果不想获取直接运行！","blue"))
+    backmenu()
+    
+    
+def install_Devploit_old():
+    print(colored("正在安装Devploit v1.1，请稍等...","green"))
+    os.system("apt update && apt upgrade -y")
+    os.system("apt install git python2 -y")
+    os.system("git clone https://github.com/GhettoCole/Devploit Devploit-v1.1/")
+    os.system("chmod +x Devploit-v1.1/Devploit install update.py")
+    print(colored("安装完成，如果想要把Devploit部署到环境里需要root权限","green"))
+    print(colored("你可以去获取，如果不想获取直接运行！","blue"))
     okay()
