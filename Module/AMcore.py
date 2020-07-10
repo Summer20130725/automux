@@ -7,8 +7,8 @@ from termcolor import colored
 pwd = os.getcwd()
 
 banner_info ="""
-+ -- --=[\033[1;0m AutoMux v2.6.6      (By.TsingPeng)\033[1;34m           ]
-+ -- --=[ TsingPeng's blog:https://bcap03.top          ]
++ -- --=[\033[1;0m AutoMux v2.6.6      (By.TsingPeng)\033[1;34m        ]
++ -- --=[ TsingPeng's blog:https://bcap03.top       ]
 + -- --=[ Root permission required with \033[1m '*'\033[1;34m        ]
 + -- --=[ Type \033[1;0m 'help'\033[1;34m for a list of commands       ]
 """
