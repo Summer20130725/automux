@@ -155,7 +155,19 @@ class install:
         if other.strip() == "1" or other.strip() == "01":install_lazymux()
         elif other.strip() == "2" or other.strip() == "02":install_zsh()
         elif other.strip() == "0" or other.strip() == "00":restart()
-        else:error() 
+        else:error()
+
+
+    def Tools():
+        print(colored("\n      [01]","yellow") + ": qmcdump")
+        print(colored("      [02]","yellow") + ": ncmdump")
+        print(colored("      [00]","yellow") + ": Back Menu\n")
+        tools = input(colored("AutoMux >>> ","yellow",attrs=['bold']))
+        if tools.strip() == "1" or tools.strip() == "01":install_qmcdump()
+        elif tools.strip() == "2" or tools.strip() == "02":install_ncmdump()
+        elif tools.strip() == "0" or tools.strip() == "00":restart()
+        else:error()
+
 
 def main():
     banner()
@@ -180,7 +192,7 @@ def main():
     elif automux.strip() == "5" or automux.strip() == "05" or automux.strip() == "update":update()
     elif automux.strip() == "0" or automux.strip() == "00" or automux.strip() == "exit":sys.exit()
     elif automux.strip() == "pwd":
-        print(pwd)
+         print(pwd)
     else:error()  
  
 
@@ -233,7 +245,8 @@ def install_list():
     print(colored("       [07]","yellow") + " : 利用工具")
     print(colored("       [08]","yellow") + " : IP地址跟踪")
     print(colored("       [09]","yellow") + " : 木马生成和反杀")
-    print(colored("       [10]","yellow") + " : 其他\n")
+    print(colored("       [10]","yellow") + " : 其他")
+    print(colored("       [11]","yellow") + " : 实用工具\n")
     print(colored("       [00]","yellow") + " : Back Menu\n")
     ilist = input(colored("AutoMux >>> ","yellow",attrs=['bold']))
     if ilist.strip() == "1" or ilist.strip() == "01":install.xxsj()
@@ -246,6 +259,7 @@ def install_list():
     elif ilist.strip() == "8" or ilist.strip() == "08":install.ipgz()
     elif ilist.strip() == "9" or ilist.strip() == "09":install.scfs()
     elif ilist.strip() == "10" or ilist.strip() == "10":install.Other()
+    elif ilist.strip() == "11" or ilist.strip() == "11":install.Tools()
     elif ilist.strip() == "0" or ilist.strip() == "00":restart()
     else:error()
 
