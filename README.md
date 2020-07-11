@@ -37,7 +37,7 @@ __Linux.sh是只对Debian(包括Ubuntu Kali)一键配置到环境的执行脚本
 
 **<font color=#7CFC00 size=3> 符号提示 </font>**
 
-黄色的<font color=#FFFF00 size=3> ! </font>代表这个工具某些功能守root权限的影响    
+黄色的<font color=#FFFF00 size=3> ! </font>代表这个工具某些功能受root权限的影响    
 
 红色的<font color=#FF0000 size=3> * </font>代表这这个工具需要root权限
 
